@@ -42,7 +42,7 @@ const Canvas = () => {
     }
 
     useEffect(() => {
-        canvasDetails.socketUrl = 'http://localhost:5001';
+        canvasDetails.socketUrl = 'https://realtime-canvas-backend.onrender.com';
         canvasDetails.socket = io.connect(canvasDetails.socketUrl, () =>{})
 
         console.log(canvasDetails);
